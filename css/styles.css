@@ -1,0 +1,251 @@
+*{
+	padding: 0px auto;
+	margin: 0px auto;
+}
+.wrapper
+{
+	width: 1900px;
+	height: 1400px;
+	background-image: url(../images/bg1.png);
+}
+
+.header
+{
+	height: 180px;
+	padding-top: 20px;
+	display: flex;
+}
+.logo
+{
+	background-image: url(../images/logo.png);
+	height: 150px;
+	background-repeat: no-repeat;
+
+	width: 150px;
+
+}
+.contacts
+{
+	display: flex;
+	height: 60px;
+	margin: 70px 0px 0px 1200px;
+}
+.contact_block
+{
+	height: 60px;
+	width: 60px;
+	padding-right: 100px;
+}
+.vk
+{
+	background-image: url(../images/vk.png);
+	height: 60px;
+	width: 60px;
+	background-repeat: no-repeat;
+}
+.inst
+{
+	background-image: url(../images/inst.png);
+	height: 60px;
+	width: 60px;
+	background-repeat: no-repeat;
+}
+.yt
+{
+	background-image: url(../images/yt.png);
+	height: 60px;
+	width: 60px;
+	background-repeat: no-repeat;
+}
+.yt:hover
+{
+	background-image: url(../images/yth.png);
+	cursor: pointer;
+}
+.inst:hover
+{
+	background-image: url(../images/insth.png);
+}
+.vk:hover
+{
+	background-image: url(../images/vkh.png);
+}
+
+
+.menu
+{
+	display: flex; 
+	justify-content: center;
+	padding: 10px 350px 0px 350px; 
+	height: 100px;
+	display: none;
+}
+.menu_block
+{
+	font-family: "Century Gothic";
+	color: #e9ecf0;
+	font-size: 58px;
+}
+.dr > a:hover
+{
+	font-weight: normal;
+	background: linear-gradient(90deg, #db1ad4, #119ffd);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+}
+ a:link, a:visited {
+   color: #e9ecf0;
+   text-decoration: none;
+   font-weight: normal;
+}
+.ng > a:hover
+{
+	font-weight: normal;
+	background: linear-gradient(90deg, #294181, #22c049);
+	-webkit-background-clip: text; 
+	-webkit-text-fill-color: transparent; 
+	cursor: pointer;
+}
+.pov > a:hover
+{
+	font-weight: normal;
+	background: linear-gradient(90deg, #248a24, #bd6d24);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+}
+
+.content
+{
+	height: 950px;
+}
+.open
+{
+	background-image: url(../images/open.png);
+	height: 700px;
+	width: 800px;
+	background-repeat: no-repeat;
+	margin: auto;
+	margin-top: 50px;
+}
+.open:hover
+{
+	background-image: url(../images/open1.png);
+}
+.overlay {
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 1;
+visibility: hidden;
+background-color: rgba(0, 0, 0, 0.7);
+opacity: 0;
+position: fixed;
+cursor: default; 
+-webkit-transition: opacity .5s;
+-moz-transition: opacity .5s;
+-ms-transition: opacity .5s;
+-o-transition: opacity .5s;
+transition: opacity .5s;
+}
+.overlay:target {
+visibility: visible;
+opacity: 1;
+}
+embed, iframe {
+top: 0;
+right: 0;
+bottom: 0; 
+left: 0; 
+display:block;
+margin: auto;
+max-width: 320px;
+max-width: 1280px;
+width: 100%;
+}
+.popup {
+top: 0;
+right: 0;
+left: 0;
+font-size: 14px;
+z-index: 10;
+display: block;
+visibility: hidden;
+margin: 0 auto;
+width: 90%;
+min-width: 320px;
+max-width: 1280px;
+position: fixed;
+padding: 10px;
+border: 1px solid #383838;
+background-color: #23252c;
+opacity: 0;
+
+}
+.overlay:target+.popup {
+top: 20%;
+visibility: visible;
+opacity: 1;
+}
+.close {
+position: absolute;
+top: -10px;
+right: -10px;padding: 0;
+width: 20px;
+height: 20px;
+border: 2px solid #ccc;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+-ms-border-radius: 15px;
+-o-border-radius: 15px;
+border-radius: 15px;
+background-color: rgba(61, 61, 61, 0.8);
+text-align: center;
+text-decoration: none;
+font-weight: bold;
+line-height: 17px;
+-webkit-transition: all ease .8s;
+-moz-transition: all ease .8s;
+-ms-transition: all ease .8s;
+-o-transition: all ease .8s;
+transition: all ease .8s;
+}
+.close:before {
+color: rgba(255, 255, 255, 0.9);
+content: "X";
+text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+font-size: 12px;
+}
+.close:hover {
+background-color: rgba(18, 159, 180, 0.8);
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+transform: rotate(360deg);    
+}
+.popup p, .popup div {
+margin-bottom: 10px;
+}
+
+
+.footer
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Century Gothic";
+	color: #e9ecf0;
+	font-size: 32px;
+	margin-top: 100px;
+}
+
+
+
+@font-face
+{
+src:url(../fonts/Century-Gothic.ttf);
+font-family: "Century Gothic";
+}
